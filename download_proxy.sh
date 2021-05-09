@@ -6,7 +6,7 @@ case $ARCH in
         LINK="https://raw.githubusercontent.com/svilex/res/master/proxy_arm64_dport"
         ;;
     "arm")
-        LINK="https://raw.githubusercontent.com/svilex/res/master/proxy_arm"
+        LINK="https://raw.githubusercontent.com/svilex/res/master/proxy_arm_dport"
         ;;
     *)
         echo "Architecture not supported yet, contact svile"
