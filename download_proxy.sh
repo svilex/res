@@ -3,7 +3,7 @@ ARCH="$(dpkg --print-architecture)"
 
 case $ARCH in
     "aarch64")
-        LINK="https://raw.githubusercontent.com/svilex/res/master/proxy_arm64"
+        LINK="https://raw.githubusercontent.com/svilex/res/master/proxy_arm64_dport"
         ;;
     "arm")
         LINK="https://raw.githubusercontent.com/svilex/res/master/proxy_arm"
