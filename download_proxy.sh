@@ -3,10 +3,10 @@ ARCH="$(dpkg --print-architecture)"
 
 case $ARCH in
     "aarch64")
-        LINK="https://raw.githubusercontent.com/svilex/res/master/proxy_arm64_dport"
+        LINK="https://raw.githubusercontent.com/svilex/res/master/proxy_arm64"
         ;;
     "arm")
-        LINK="https://raw.githubusercontent.com/svilex/res/master/proxy_arm_dport"
+        LINK="https://raw.githubusercontent.com/svilex/res/master/proxy_arm"
         ;;
     *)
         echo "Architecture not supported yet, contact svile"
