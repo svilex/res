@@ -1,9 +1,15 @@
 #!/bin/bash
 ARCH="$(dpkg --print-architecture)"
+SDK="$(getprop ro.build.version.sdk)"
 
 case $ARCH in
     "aarch64")
-        LINK="https://raw.githubusercontent.com/svilex/res/master/proxy_arm64"
+        if  [[ $SDK -gt 29 ]]
+        then
+            LINK="https://raw.githubusercontent.com/svilex/res/master/proxy_arm64_new"
+        else
+            LINK="https://raw.githubusercontent.com/svilex/res/master/proxy_arm64"
+        fi
         ;;
     "arm")
         LINK="https://raw.githubusercontent.com/svilex/res/master/proxy_arm"
